@@ -17,7 +17,7 @@ st.image(im, caption='image from wikimedia commons',
 hist_red, _ = np.histogram(im[:, :, 0], bins=64)
 hist_green, _ = np.histogram(im[:, :, 1], bins=64)
 hist_blue, _ = np.histogram(im[:, :, 2], bins=64)
-hist = np.stack((hist_red, hist_green, hist_blue), axis=1)
+hist = np.stack((hist_red, hist_green, hist_blue), axis=)
 
 df_hist = pd.DataFrame(hist, columns=['R', 'G', 'B'])
 st.bar_chart(df_hist)
